@@ -15,7 +15,7 @@ import math as m
 
 # krtfl=int(290)
 # meshok=int(25)
-# num1=m.floor(krtfl/meshok)
+# num1=krtfl//meshok
 # num2=krtfl%meshok
 # print(num1)
 # print(num2)
@@ -36,7 +36,43 @@ import math as m
 
 #task_6
 
-old_price=int(input('Write old price:'))
-new_price=int(input('Write new price:'))
-res=round((new_price-old_price)*100/old_price,1)
-print(res)
+# old_price=int(input('Write old price:'))
+# new_price=int(input('Write new price:'))
+# res=round((new_price-old_price)*100/old_price,1)
+# print(res)
+
+
+#task_7
+
+
+# x=int(input("Enter x:"))
+# y=m.pow(m.e,(1/(1+m.pow(m.cos(x),2))))
+# print(y)
+
+#task_8
+
+# dt=1500
+# person1=45
+# result=m.ceil(dt/person1)
+# print(result)
+
+
+#task_9
+
+
+# a=int(input("Введите длину катета:"))
+# b=int(input("Введите длину катета:"))
+# c=int(input("Введите длину гипотенузы:"))
+# sin=min(a,b)/c
+# print("Тар бурчтун синусу:",sin)
+
+#task_10
+
+katet_1=int(input("Введите длину катета:"))
+katet_2=int(input("Введите длину катета:"))
+gip=int(input("Введите длину гипотенузы:"))
+sinus=min(katet_1,katet_2)/gip
+burch1=m.degrees(m.asin(sinus))
+burch2=sinus*180/m.pi
+print(burch1)
+print(burch2)
